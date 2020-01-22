@@ -20,6 +20,10 @@
     src: url('fonts/tenorsans/tenorsans-regular-webfont.woff2') format('woff2');
 }
 
+:root{
+    --myteal: #33a2b3;
+    --primary: var(--myteal);
+}
 
 *{
     font-size: 100%;
@@ -28,7 +32,7 @@
 /*
 @media screen (min-width: 800px){
     .head{
-        background-color: #33a2b3;
+        background-color: var(--myteal);
     }
 
 }
@@ -37,7 +41,6 @@
 nav{
     font-family: tenorSans;
 }
-
 
 .body_head{
     font-family: tenorSans;
