@@ -1,0 +1,48 @@
+@font-face{
+    font-family: 'sansBold';
+    src: url('fonts/sansserif/_sansserifbldflf-webfont.woff') format('woff');
+    src: url('fonts/sansserif/_sansserifbldflf-webfont.woff2') format('woff2');
+}
+@font-face{
+    font-family: 'sansBook';
+    src: url('fonts/sansserif/_sansserifbookflf-webfont.woff') format('woff');
+    src: url('fonts/sansserif/_sansserifbookflf-webfont.woff2') format('woff2');
+}
+@font-face{
+    font-family: 'sansDemiBold';
+    src: url('fonts/sansserif/_sansserifflf-demibold-webfont.woff') format('woff');
+    src: url('fonts/sansserif/_sansserifflf-demibold-webfont.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'tenorSans';
+    src: url('fonts/tenorsans/tenorsans-regular-webfont.woff') format('woff');
+    src: url('fonts/tenorsans/tenorsans-regular-webfont.woff2') format('woff2');
+}
+
+
+*{
+    font-size: 100%;
+}
+
+/*
+@media screen (min-width: 800px){
+    .head{
+        background-color: #33a2b3;
+    }
+
+}
+*/
+
+nav{
+    font-family: tenorSans;
+}
+
+
+.body_head{
+    font-family: tenorSans;
+}
+.body_txt{
+    font-family: sansBook;
+}
+
