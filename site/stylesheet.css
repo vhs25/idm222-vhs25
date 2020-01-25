@@ -29,16 +29,19 @@
     font-size: 100%;
 }
 
-/*
-@media screen (min-width: 800px){
+body{
+    margin: 0;
+}
+
+@media screen and (min-width: 50em){
     .head{
         background-color: var(--myteal);
     }
 
 }
-*/
 
-nav{
+
+.nav{
     font-family: tenorSans;
 }
 
@@ -49,3 +52,17 @@ nav{
     font-family: sansBook;
 }
 
+.footer_head{
+    font-family: tenorSans;
+}
+
+.footer_txt{
+    font-family: sansBook;
+}
+
+.tile{
+    font-family: tenorSans;
+}
+.tile p {
+    font-family: sansBook;
+}
