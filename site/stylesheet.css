@@ -23,23 +23,19 @@
 :root{
     --myteal: #33a2b3;
     --primary: var(--myteal);
+    
+    --linkpurple: #551a8b;
+    --primary: var(--linkpurple);
 }
 
 *{
     font-size: 100%;
+    box-sizing: border-box;
 }
 
 body{
     margin: 0;
 }
-
-@media screen and (min-width: 50em){
-    .head{
-        background-color: var(--myteal);
-    }
-
-}
-
 
 .nav{
     font-family: tenorSans;
@@ -47,22 +43,87 @@ body{
 
 .body_head{
     font-family: tenorSans;
+    margin: 1.5rem auto;
+    color: var(--myteal);
+    font-size: 2rem;
+    max-width: 85%;
 }
 .body_txt{
     font-family: sansBook;
+    font-size: 1.15rem;
+    line-height: 2rem;
+    margin: 1.5rem auto;
+    max-width: 85%;
 }
 
 .footer_head{
     font-family: tenorSans;
+    margin: 1.5rem;
 }
 
 .footer_txt{
     font-family: sansBook;
+    margin: 1.5rem;
 }
 
 .tile{
     font-family: tenorSans;
+    margin: 1.5rem;
 }
 .tile p {
     font-family: sansBook;
+    margin: 1.5rem;
 }
+
+
+@media screen and (min-width: 800px){
+    .head{
+        background-color: var(--myteal);
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 2rem;
+    }
+
+    .head img{
+        max-width: 100%;
+        grid-area: 2/1/3/3;
+    }
+    img.small{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+    .large, .img{
+        display: none;
+    }
+    .small{
+        max-width: 85%;
+        
+    }
+    .head_logo{
+        text-align: center;
+        margin: 2rem auto 0;
+    }
+    .nav{
+        font-size: 1.2em;
+        text-align: center;
+        padding: 5% 0 .5rem 0;
+        margin: 0 7.5%;
+
+        border: var(--linkpurple);
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        
+        display: flex;
+        justify-content: space-around;
+    }
+    :link{
+        text-decoration: none;
+    }
+}
+
+/*Move nav specs to small @MEDIA, adjust for tablet**/
