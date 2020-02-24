@@ -45,7 +45,7 @@ body{
 }
 .body_head{
     font-family: tenorSans;
-    margin: 1.5rem auto;
+    margin: 2.5rem auto 1.5rem;
     color: var(--myteal);
     font-size: 2rem;
     max-width: 85%;
@@ -67,7 +67,7 @@ body{
 }
 .tile{
     font-family: tenorSans;
-    margin: 1.5rem;
+    margin: 1.5rem auto;
     max-width: 350px;
     align-content: space-around;
 }
@@ -80,6 +80,7 @@ body{
 .tile header{
     margin: 1rem auto 1.5rem;
     width: 325px;
+    font-size: 1.15rem;
 }
 .head_logo img{
     max-width: 85%;
@@ -95,7 +96,7 @@ body{
 
 
 
-@media screen and (min-width: 650px){
+@media screen and (min-width: 760px){
     .all_tiles{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -105,6 +106,8 @@ body{
     }
     .tile{
         margin: 1rem auto;
+        height: 560px;
+
     }
 
 }
@@ -195,12 +198,15 @@ body{
         border-style: solid;
         border-width: 0px 1.5px 0px 0px;
     }
+    .tile{
+        margin: auto;
+    }
 
 }
 
 
 
-@media screen and (min-width: 1050px){
+@media screen and (min-width: 1130px){
     .all_tiles{
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -209,5 +215,7 @@ body{
         margin: auto;
         max-width: 1100px;
         justify-items: center;
+        height: 560px;
+
     }
 }
