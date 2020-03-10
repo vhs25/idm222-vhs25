@@ -20,7 +20,27 @@
                 <img src="large/logo_large.png" alt="painted header reading Victoria Stauffer" class="large">
             </a>
         </div>
-    <div class="img"><img src="med/portrait_med.png" alt="painted portrait of myself, purple monochrome."></div>
+
+        <picture class="portrait">
+            <source media="(min-width=800px)" sizes="50vw" 
+                    srcset="med/portrait_med.png 800vw,
+                            large/portait_large.png 1100vw"> 
+            <img
+                 src="med/portrait_med.png" alt="painted portrait of myself, purple monochrome."
+                 sizes="50vw" 
+                 srcset="med/portrait_med.png 800vw,
+                         large/portait_large.png 1100vw">
+        </picture>
+
+        <!--<div class="img">   
+           <source media="(min-width: 800px)"
+                sizes="50vw"
+                src="med/portrait_med.png"
+                srcset="med/portrait_med.png 800w,
+                        large/portait_large.png 1100w"
+                alt="painted portrait of myself, purple monochrome."
+                >
+        </div>--> 
         <div class="nav">
             <a href="portfolio.html">projects</a>
             <a href="art_portfolio.html">artwork</a>
