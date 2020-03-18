@@ -3,14 +3,12 @@ const popup = document.getElementById('pop-up');
 const picture = document.getElementById('picture');
 
 
-
 const handleButtonClick = whichOne =>{
     console.log(whichOne);
     console.log(whichOne.target);
     console.log(whichOne.target.id);
-    //picture(whichOne.target.id);
     const num = whichOne.target.id;
-    picture.src = 'med/${num}_med.png';
+    picture.src = `med/${num}_med.png`;
 
     popup.hidden = false;
 }

@@ -59,11 +59,13 @@ body{
 }
 .footer_head{
     font-family: tenorSans;
-    margin: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 85%;
 }
 .footer_txt{
     font-family: sansBook;
-    margin: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 85%;
 }
 .tile{
     font-family: tenorSans;
@@ -92,7 +94,7 @@ body{
     top: 0;
     left: 0;
 
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
 
     height: 100%;
     width: 100%;
@@ -103,18 +105,42 @@ body{
 
     margin: auto;
     position: absolute;
-    top: 12.5%;
-    left: 15%;
+    top: 10%;
+    left: 17.5%;
+    right: 17.5%;
+}
+.pop-up_box img{
+    max-width: 90%;
+}
 
-    padding: 4em;
+@media screen and (max-width: 350px){
+   body{ max-width: 100%;}
+   .pop-up_box{
+    top: 30%;
+    max-width: 100%;
+    left: 0%;
+    right: 0%;
+}
+}
+@media screen and (max-width: 500px){
+    .pop-up_box{
+        max-width: 100%;
+        left: 0%;
+        right: 0%;
+        top: 30%
+    }
 }
 
 
-
-
 @media screen and (min-width: 500px){
-    .head_logo img{
-        max-width: 430px;
+    .head_logo input{
+        max-width: 80%;
+    }
+    .pop-up_box{
+        max-width: 100%;
+        left: 0%;
+        right: 0%;
+        top: 30%
     }
 }
 
@@ -131,7 +157,6 @@ body{
     .tile{
         margin: 1rem auto;
         height: 560px;
-
     }
 
 }
@@ -167,6 +192,9 @@ body{
     }
     .tile{
         margin: 3rem auto;
+    }
+    .pop-up_box{
+        top: 15%
     }
 }
 
@@ -230,10 +258,23 @@ body{
     .tile{
         margin: auto;
     }
-
+    .pop-up_box{
+        top: 15%
+    }
 }
-
-
+@media screen and (min-width: 1000px){
+    .nav{
+        font-size: 2rem;
+    }
+    .footer_head, .footer_txt, .body_txt{
+        font-size: 1.25rem;
+        max-width: 70%;
+    }
+    .body_head{
+        font-size: 2rem;
+        max-width: 70%;
+    }
+}
 
 @media screen and (min-width: 1130px){
     .all_tiles{
