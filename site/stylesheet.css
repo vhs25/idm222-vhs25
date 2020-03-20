@@ -41,41 +41,48 @@ body{
     margin: 0;
 }
 .nav{
-    font-family: tenorSans;
+    font-family: tenorSans, Arial, Helvetica, sans-serif;
 }
 .body_head{
-    font-family: tenorSans;
-    margin: 2.5rem auto 1.5rem;
+    font-family: tenorSans, Arial, Helvetica, sans-serif;
+    margin: 3rem auto 1.5rem;
     color: var(--myteal);
     font-size: 2rem;
     max-width: 85%;
 }
 .body_txt{
-    font-family: sansBook;
+    font-family: sansBook, Arial, Helvetica, sans-serif;
     font-size: 1.15rem;
     line-height: 2rem;
     margin: 1.5rem auto;
     max-width: 85%;
 }
+.body_txt:last-child{
+    margin: 1.5rem auto 3rem;
+}
 .footer_head{
-    font-family: tenorSans;
+    font-family: tenorSans, Arial, Helvetica, sans-serif;
     margin: 1.5rem auto;
     max-width: 85%;
+    font-size: 1.25rem
+}
+.footer_head:first-child{
+    margin: 1.5rem auto 3rem;
 }
 .footer_txt{
-    font-family: sansBook;
+    font-family: sansBook, Arial, Helvetica, sans-serif;
     margin: 1.5rem auto;
     max-width: 85%;
 }
 .tile{
-    font-family: tenorSans;
+    font-family: tenorSans, Arial, Helvetica, sans-serif;
     margin: 1.5rem auto;
     max-width: 350px;
     align-content: space-around;
 }
 .tile p {
     width: 325px;
-    font-family: sansBook;
+    font-family: sansBook, Arial, Helvetica, sans-serif;
     margin: 1.5rem auto;
     line-height: 2rem;
 }
@@ -133,8 +140,8 @@ body{
 
 
 @media screen and (min-width: 500px){
-    .head_logo input{
-        max-width: 80%;
+    .head_logo {
+        max-width: 100%;
     }
     .pop-up_box{
         max-width: 100%;
@@ -173,6 +180,9 @@ body{
     .head_logo{
         text-align: center;
         margin: 2rem auto 0;
+    }
+    .head_logo img{
+        width: 400px;
     }
     .nav{
         font-size: 1.2em;
@@ -273,6 +283,10 @@ body{
     .body_head{
         font-size: 2rem;
         max-width: 70%;
+    }
+    .pop-up_box img{
+        max-height: 80%;
+        top: 3%;
     }
 }
 
