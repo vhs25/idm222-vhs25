@@ -112,7 +112,7 @@ body{
 
     margin: auto;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 17.5%;
     right: 17.5%;
 }
@@ -286,7 +286,6 @@ body{
     }
     .pop-up_box img{
         max-height: 80%;
-        top: 3%;
     }
 }
 
